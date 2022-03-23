@@ -13,4 +13,8 @@ public class HomeController {
     public String home() {
         return "success.jsp";
     }
+    @GetMapping("/test")
+    public String test(){
+        return "test";
+    }
 }

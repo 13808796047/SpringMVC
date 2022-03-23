@@ -16,4 +16,11 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
+<!--     配置视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 前缀 -->
+        <property name="prefix" value="/WEB-INF/views/"></property>
+        <!-- 要拼接的后缀 -->
+        <property name="suffix" value=".jsp"></property>
+    </bean>
 </beans>
